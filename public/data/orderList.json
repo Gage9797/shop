@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "status":"买家未付款",
+        "img": "/images/shops/1.jpg",
+        "title": "高雅3D水漾修护保湿面膜",
+        "describe": "全面呵护滋养皮肤，软化和补充水分",
+        "price": 298,
+        "num": 1,
+        "pay": false,
+        "deliver": false,
+        "sign": false,
+        "comment": false
+    },
+    {
+        "id": 2,
+        "status":"买家已付款",
+        "img": "/images/shops/1.jpg",
+        "title": "高雅3D水漾修护保湿面膜",
+        "describe": "全面呵护滋养皮肤，软化和补充水分",
+        "price": 298,
+        "num": 1,
+        "pay": true,
+        "deliver": false,
+        "sign": false,
+        "comment": false
+    },
+    {
+        "id": 3,
+        "status":"卖家已发货",
+        "img": "/images/shops/1.jpg",
+        "title": "高雅3D水漾修护保湿面膜",
+        "describe": "全面呵护滋养皮肤，软化和补充水分",
+        "price": 298,
+        "num": 1,
+        "pay": true,
+        "deliver": true,
+        "sign": false,
+        "comment": false
+      },
+      {
+          "id": 4,
+          "status":"交易成功",
+          "img": "/images/shops/1.jpg",
+          "title": "高雅3D水漾修护保湿面膜",
+          "describe": "全面呵护滋养皮肤，软化和补充水分",
+          "price": 298,
+          "num": 1,
+          "pay": true,
+          "deliver": true,
+          "sign": true,
+          "comment": false
+        },
+        {
+            "id": 5,
+            "status":"交易成功",
+            "img": "/images/shops/1.jpg",
+            "title": "高雅3D水漾修护保湿面膜",
+            "describe": "全面呵护滋养皮肤，软化和补充水分",
+            "price": 298,
+            "num": 1,
+            "pay": true,
+            "deliver": true,
+            "sign": true,
+            "comment": true
+          }
+]
