@@ -62,9 +62,9 @@ export default {
              else{
                  Toast('加载失败')
              }
-         }).catch(function(error){
-            console.log(error);
-        })  
+         }).catch( error => {
+            console.log(error)
+        })   
         },
         getshopList() {
             this.$axios.get('/data/shops.json').then( res => {        
@@ -75,8 +75,8 @@ export default {
              else{
                  Toast('加载失败')
              }
-         }).catch(function(error){
-            console.log(error);
+         }).catch( error => {
+            console.log(error)
         })  
         }
     },

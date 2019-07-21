@@ -4,7 +4,7 @@
     <h3>购物车</h3>
     <div class="shopCar-shop" v-for="(item,index) in shopCar" :key="index">
         <div class="shopCar-storeName">
-            <input style="transform: scale(1.5,1.5)" type="checkbox" v-model="item.isSelected" @click="selectOne"/>
+            <input style="transform: scale(1.5,1.5)" type="checkbox" v-model="item.isSelected" @click="selectOne(item)"/>
             <span>xx治官方旗舰店</span>
         </div>
         <div class="shopCar-shopName">
@@ -18,6 +18,9 @@
                     <td><span  @click="reduce(index)">-</span></td>
                     <td>{{item.num}}</td>
                     <td><span  @click="add(index)">+</span></td>
+                    <td><button @click="del(index)">移除</button></td>
+                    </tr>
+                    <tr>
                     </tr>
                 </table>               
             </div>
@@ -64,22 +67,42 @@ export default {
             this.shopCar.forEach(item=>item.isSelected = !this.checkAll)
             
         },
-        selectOne() {
-            this.checkAll = this.shopCar.every(item=>item.isSelected)
+        selectOne(item) {
+            if(typeof item.isSelected == 'undefined') {//检测属性是否存在
+                //Vue.set(item, "checked", true);
+                this.$set(item, "isSelected", true);//局部注册
+            }else{
+                item.isSelected = !item.isSelected;//状态取反
+            }
+            //判断单选是否全选中，如果有一个未选，则取消全选，反之则全选。
+            var itemisChecked = [];
+            this.shopCar.forEach(function (item, index){
+                if (item.isSelected === true ) {
+                    itemisChecked.push(item);
+                }
+            })
+            if (itemisChecked.length === this.shopCar.length ) {
+                this.checkAll = true;
+            }else{
+                this.checkAll = false;
+            }
         },
         reduce(index) {
-            if(this.shopCar[index].num>=0) {
+            if(this.shopCar[index].num>1) {
                 this.shopCar[index].num--
             }
             else {
-                this.shopCar[index].num=0
+                this.shopCar[index].num=1
             }
             return this.shopCar[index].num
         },
         add(index) {
             this.shopCar[index].num++
+        },
+        del(index){
+            this.shopCar.splice(index,1)
         }
-    },    
+    },
     mounted() {
         this.getshopCar()
     }

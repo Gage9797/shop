@@ -8,7 +8,16 @@ export default new Vuex.Store({
     isLogin: false,
     shopList: "",
     orderList: "",
-    shopCar: ""
+    shopCar: [
+      {
+        id: 1,
+        img: "/images/shops/1.jpg",
+        title: "高雅3D水漾修护保湿面膜",
+        describe: "全面呵护滋养皮肤，软化和补充水分",
+        price: 298,
+        num: 1
+      }
+    ]
   },
 
   // 获取属性的状态

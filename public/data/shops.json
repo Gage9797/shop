@@ -2,18 +2,20 @@
   {
     "id": 1,
     "img": "/images/shops/1.jpg",
-    "title": "高雅3D水漾修护保湿面膜",
-    "describe": "全面呵护滋养皮肤，软化和补充水分",
-    "price": 298,
-    "icon": "特价"
+    "title": "PowerShot SX730",
+    "describe": "国行Canon/佳能 PowerShot SX730 HS数码照相机高清旅游家用美颜",
+    "price": 2100,
+    "icon": "特价",
+    "num": 1
   },
   {
     "id": 2,
     "img": "/images/shops/2.jpg",
-    "title": "高雅3D水漾修护保湿面膜",
-    "describe": "全面呵护滋养皮肤，软化和补充水分",
-    "price": 298,
-    "icon": "特价"
+    "title": "苏泊尔电蒸锅",
+    "describe": "苏泊尔电蒸锅多功能炒锅电饼铛煎烤机热锅煮锅韩式不粘火锅锅家用",
+    "price": 689,
+    "icon": "特价",
+    "num": 1
   },
   {
     "id": 3,
@@ -21,30 +23,34 @@
     "title": "高雅3D水漾修护保湿面膜",
     "describe": "全面呵护滋养皮肤，软化和补充水分",
     "price": 298,
-    "icon": "特价"
+    "icon": "特价",
+    "num": 1
   },
   {
     "id": 4,
-    "img": "/images/shops/1.jpg",
-    "title": "高雅3D水漾修护保湿面膜",
-    "describe": "全面呵护滋养皮肤，软化和补充水分",
-    "price": 298,
-    "icon": "特价"
+    "img": "/images/shops/4.jpg",
+    "title": "华为HUAWEI nova",
+    "describe": "免息直降价770 华为HUAWEI nova 4e新手机5i官方旗舰5pro nova4e",
+    "price": 1248,
+    "icon": "特价",
+    "num": 1
   },
   {
     "id": 5,
-    "img": "/images/shops/2.jpg",
-    "title": "高雅3D水漾修护保湿面膜",
-    "describe": "全面呵护滋养皮肤，软化和补充水分",
-    "price": 298,
-    "icon": "特价"
+    "img": "/images/shops/5.jpg",
+    "title": "Apple/MNQF2CH/A QG2 ",
+    "describe": "Apple/苹果 MacBook Pro MNQF2CH/A QG2 MPXV2笔记本电脑13寸15i7",
+    "price": 5000,
+    "icon": "特价",
+    "num": 1
   },
   {
     "id": 6,
-    "img": "/images/shops/3.jpg",
-    "title": "高雅3D水漾修护保湿面膜",
-    "describe": "全面呵护滋养皮肤，软化和补充水分",
-    "price": 298,
-    "icon": "特价"
+    "img": "/images/shops/6.jpg",
+    "title": "任天堂switch主机NS掌机家用游戏机",
+    "describe": "顺丰包邮任天堂switch主机NS掌机家用游戏机口袋妖怪皮卡丘大乱斗",
+    "price": 1298,
+    "icon": "特价",
+    "num": 1
   }
 ]

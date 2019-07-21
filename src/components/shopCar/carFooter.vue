@@ -29,7 +29,13 @@ export default {
       MessageBox.alert(this.message, this.title);
     },
     joinCar() {
-      this.$store.state.shopCar.push(this.$store.state.shopList[this.index])
+      for(var i=0;i<this.$store.state.shopCar.length;i++){
+        if(this.$store.state.shopCar[i].id==this.$store.state.shopList[this.index-1].id){
+          Toast('已经加入购物车')
+          return;
+        }
+      }
+      this.$store.state.shopCar.unshift(this.$store.state.shopList[this.index-1])
       Toast('成功加入购物车')
     }
   }

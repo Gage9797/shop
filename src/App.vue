@@ -37,7 +37,7 @@ export default {
 			flag: "",
 		}
 	},
-	created() {
+	mounted() {
 		this.flag= this.$route.path === "/home/index"? false : true,
 		this.getshopCar(),
 		this.getorderList()
@@ -56,7 +56,7 @@ export default {
              else{
                  Toast('加载失败')
              }
-         }).catch(function(error){
+         }).catch( error => {
             console.log(error)
         })  
 		},
@@ -70,10 +70,10 @@ export default {
              else{
                  Toast('加载失败')
              }
-         }).catch(function(error){
+         }).catch( error => {
             console.log(error)
         })  
-        },
+		},
 		
 			
 	},
