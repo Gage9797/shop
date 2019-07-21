@@ -3,12 +3,12 @@
     <div class="home">
         <nav class="navigation">
             <ul id="nav">
-                <li><span class="active"><router-link to="/home">首页</router-link></span></li>
-                <li><span><router-link to="/home/food">食品</router-link></span></li>
-                <li><span><router-link to="/home/baihuo">百货</router-link></span></li>
-                <li><span><router-link to="/home/clean">洗护</router-link></span></li>
-                <li><span><router-link to="/home/fresh">生鲜</router-link></span></li>
-                <li><span><router-link to="/home/dress">女装</router-link></span></li>
+                <li><span :class="activeClass==1?'active':''" @click="changeActive(1)"><router-link to="/home">首页</router-link></span></li>
+                <li><span :class="activeClass==2?'active':''" @click="changeActive(2)"><router-link to="/home/food">食品</router-link></span></li>
+                <li><span :class="activeClass==3?'active':''" @click="changeActive(3)"><router-link to="/home/baihuo">百货</router-link></span></li>
+                <li><span :class="activeClass==4?'active':''" @click="changeActive(4)"><router-link to="/home/clean">洗护</router-link></span></li>
+                <li><span :class="activeClass==5?'active':''" @click="changeActive(5)"><router-link to="/home/fresh">生鲜</router-link></span></li>
+                <li><span :class="activeClass==6?'active':''" @click="changeActive(6)"><router-link to="/home/dress">女装</router-link></span></li>
             </ul>
         </nav> 
     </div>
@@ -21,26 +21,14 @@
 export default {
     data() {
         return {
+            activeClass: 1,
+            isActive1:true
         }
     },
     methods: {
-        change() {
-            var nav= document.getElementById("nav").getElementsByTagName("span")
-            for(var i =0;i < nav.length;i++){
-                nav[i].onclick = (function(x){
-                return function(){
-                    for(var j =0;j < nav.length;j++){
-                        nav[j].setAttribute("class","none")
-                    }
-                    nav[x].setAttribute("class","active")
-                    }
-                })(i)
-            }  
-        }
-    },       
-    mounted() {
-        this.change()
-       
+       changeActive(i){
+           this.activeClass=i
+       }
     }
 }
 </script>
